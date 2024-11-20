@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tu mascota</title>
+		<link rel="stylesheet" href="../styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+			  <img src="../imagenes/Logo tu mascota.jpg" alt="Logo Tu Mascota" class="logo" />
+			</div>
+			<h1>Tu mascota</h1>
+            <nav class="navbar">
+				<ul class="nav-links">
+				  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="sobrenosotros.html">Contacto</a></li>
+				  <li><a href="perros.html">Perros</a></li>
+				  <li><a href="gatos.html">Gatos</a></li>
+				</ul>
+			  </nav>
+			<div class="container-icon">
+			  <div class="container-cart-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+				  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+				</svg>
+				<div class="count-products">
+				  <span id="contador-productos">0</span>
+				</div>
+			  </div>
+			</div>
+		  </header>
+
+      <div class="container-cart-products hidden-cart">
+        <div class="row-product">
+          <!-- Aquí se mostrarán los productos añadidos al carrito -->
+        </div>
+        <div class="cart-total hidden">
+          <h3>Total:</h3>
+          <span class="total-pagar">$0</span>
+        </div>
+        <p class="cart-empty">El carrito está vacío</p>
+      </div>
+      
+      
+</head>
+
+<main>
+    <h2 class="section-title">Productos para gatos</h2>
+    <!-- Contenedor único para todos los productos -->
+    <div class="container-items">
+      <!-- Producto 1 -->
+      <div class="item">
+        <figure>
+          <img src="../imagenes/equilibrio-gato-adulto-1.webp" alt="Ración Equilibrio gato 7,8 kg" />
+        </figure>
+        <div class="info-product">
+          <h2>Ración Equilibrio gato 7,8 kg</h2>
+          <p class="price">$2500</p>
+          <p class="description">Alimento premium para gatos adultos con un sabor irresistible.</p>
+        </div>
+      </div>
+    
+      <!-- Producto 2 -->
+      <div class="item">
+        <figure>
+          <img src="../imagenes/collar2.webp" alt="Correa para gato" />
+        </figure>
+        <div class="info-product">
+          <h2>Correa para gato</h2>
+          <p class="price">$600</p>
+          <p class="description">Diseño cómodo y ajustable para paseos seguros con tu gato.</p>
+        </div>
+      </div>
+    
+      <!-- Producto 3 -->
+      <div class="item">
+        <figure>
+          <img src="../imagenes/balanced gato.webp" alt="Ración Balanced gato 9 kg" />
+        </figure>
+        <div class="info-product">
+          <h2>Ración Balanced gato 9 kg</h2>
+          <p class="price">$2100</p>
+          <p class="description">Ración completa y balanceada para gatos de todas las razas.</p>
+        </div>
+      </div>
+    
+      <!-- Producto 4 -->
+      <div class="item">
+        <figure>
+          <img src="../imagenes/cat grand plus.webp" alt="Ración Gran Plus gato 10 kg" />
+        </figure>
+        <div class="info-product">
+          <h2>Ración Gran Plus gato 10 kg</h2>
+          <p class="price">$2500</p>
+          <p class="description">Alimento superior que combina sabor y nutrición.</p>
+        </div>
+      </div>
+    
+      <!-- Producto 5 -->
+      <div class="item">
+        <figure>
+          <img src="../imagenes/cat-chow-adultos.webp" alt="Ración purina cat chow 12 kg" />
+        </figure>
+        <div class="info-product">
+          <h2>Ración Purina Cat Chow 12 kg</h2>
+          <p class="price">$2500</p>
+          <p class="description">Proteínas de alta calidad para mantener a tu gato en forma.</p>
+        </div>
+      </div>
+    
+      <!-- Producto 6 -->
+      <div class="item">
+        <figure>
+          <img src="../imagenes/collar gato ajustable con contacto de emergencia.avif" alt="Collar emergencia código QR gato" />
+        </figure>
+        <div class="info-product">
+          <h2>Collar Emergencia Código QR Gato</h2>
+          <p class="price">$2500</p>
+          <p class="description">Collar con código QR para emergencias, ideal para tu gato.</p>
+        </div>
+      </div>
+    
+      <!-- Producto 7 -->
+      <div class="item">
+        <figure>
+          <img src="../imagenes/lager-gato-castrado-10-.webp" alt="Ración Lager gato 11 kg" />
+        </figure>
+        <div class="info-product">
+          <h2>Ración Lager gato 11 kg</h2>
+          <p class="price">$2100</p>
+          <p class="description">Especialmente formulada para gatos castrados.</p>
+        </div>
+      </div>
+    
+      <!-- Producto 8 -->
+      <div class="item">
+        <figure>
+          <img src="../imagenes/Frost-Cat-Indoor-2.webp" alt="Ración Frost gato 8,5 kg" />
+        </figure>
+        <div class="info-product">
+          <h2>Ración Frost gato 8,5 kg</h2>
+          <p class="price">$2213</p>
+          <p class="description">Ración ligera para gatos de interior, con fibra natural.</p>
+        </div>
+      </div>
+    
+      <!-- Producto 9 -->
+      <div class="item">
+        <figure>
+          <img src="../imagenes/primogato-2.jpg.webp" alt="Ración Primogato 10 kg" />
+        </figure>
+        <div class="info-product">
+          <h2>Ración Primogato 10 kg</h2>
+          <p class="price">$1890</p>
+          <p class="description">Nutrición balanceada para mantener a tu gato saludable.</p>
+        </div>
+      </div>
+    
+      <!-- Producto 10 -->
+      <div class="item">
+        <figure>
+          <img src="../imagenes/maxine-cuadrado.webp" alt="Ración Maxine gato 7,5 kg" />
+        </figure>
+        <div class="info-product">
+          <h2>Ración Maxine gato 7,5 kg</h2>
+          <p class="price">$1200</p>
+          <p class="description">Opción económica sin comprometer la calidad nutricional.</p>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  
+
+
+
+              <section class="shipping-section">
+                <h1 class="section-title">ENVÍOS Y ENTREGAS</h1>
+                <p>
+                  Se realizan envíos a todo el Uruguay, pudiendo a su vez optar por el retiro del producto en nuestro local comercial de Montevideo.
+                </p>
+            
+                <h2 class="sub-title">COSTO</h2>
+                <p>
+                  El costo de los envíos se detalla en el carrito de compras al comenzar el proceso de "checkout".
+                </p>
+            
+                <h2 class="sub-title">CONDICIONES DE ENTREGA</h2>
+                <p>
+                  Las entregas se realizan de <strong>LU a VI</strong> de 9:00 a 19:30 hs, en la dirección especificada por el cliente. El producto es entregado puertas adentro a quien se encuentre en el domicilio indicado.
+                </p>
+                <p>
+                  En el caso de que no se encuentre persona alguna en la dirección de referencia, se dejará una notificación a los efectos de re coordinar el envío. Una vez emitida la factura, no se permiten cambios en la dirección de la misma.
+                </p>
+                <p>
+                  Si se opta por el retiro de la orden en nuestro local de Barrio Sur, puede efectuarlo durante nuestro horario de atención al público, que es de <strong>LU a VI</strong> de 8:00 a 19:00 hs y <strong>SA</strong> de 8:00 a 15:00 hs.
+                </p>
+            
+                <h2 class="sub-title">PLAZOS DE ENTREGA</h2>
+                <p>
+                  La entrega se realiza según la opción seleccionada en el proceso de checkout y dependiendo de la zona y Departamento de Uruguay.
+                </p>
+            
+                <h2 class="sub-title">DEVOLUCIONES Y REEMBOLSOS</h2>
+                <p>
+                  Nuestros productos están respaldados por garantía que cubre posibles defectos de fabricación o problemas derivados de un manejo o conservación inadecuados por parte del personal de Tu Ración.
+                </p>
+                <p>
+                  El período para realizar cambios o solicitar reembolsos es de <strong>30 días</strong> a partir de la recepción del producto. Para hacerlo efectivo, es necesario presentar la factura original y asegurarse de que el producto esté sin abrir y en su embalaje original.
+                </p>
+                <p>
+                  En casos excepcionales, en los que solo sea posible identificar el defecto al abrir el embalaje, haremos las excepciones necesarias.
+                </p>
+                <p>
+                  Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nuestro Centro de Atención al Cliente.
+                </p>
+              </section>
+
+              
+              <footer class="footer">
+                <div class="footer-container">
+                  <!-- Sección: Quiénes somos -->
+                  <div class="footer-section">
+                    <h3>QUIÉNES SOMOS</h3>
+                    <ul>
+                      <li><a href="../pages/sobrenosotros.html">Quiénes somos</a></li>
+                      <li><a href="../pages/politicasdeprivacidad.html">Política de Privacidad</a></li>
+                      <li><a href="https://wa.me/59891032124" target="_blank">Contacta con nosotros</a></li>
+                    </ul>
+                  </div>
+                  <!-- Sección: Mapa del lugar -->
+                  <div class="footer-section">
+                    <h3>MAPA DEL LUGAR</h3>
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d347.2835531726794!2d-56.1864903!3d-34.9035385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDU0JzEyLjciUyA1NsKwMTEnMTEuMyJX!5e0!3m2!1ses-419!2suy!4v1699980538753!5m2!1ses-419!2suy" 
+                      width="200" 
+                      height="150" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy">
+                    </iframe>
+                  </div>
+
+                  <!-- Sección: Información de contacto -->
+                  <div class="footer-section">
+                    <h3>INFORMACIÓN DE CONTACTO</h3>
+                    <p>Zelmar Michelini 1237, Montevideo, Uruguay</p>
+                    <p><a href="mailto:Tumascota@gmail.com">Tumascota@gmail.com</a></p>
+                    <p>Cel de contacto: 091032124</p>
+                  </div>
+                </div>
+              </footer>
+            
+              <script src="../js/main.js"></script>
+            </body>
+            </html>

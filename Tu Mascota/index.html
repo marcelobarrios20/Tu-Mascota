@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tu mascota</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+			  <img src="imagenes/Logo tu mascota.jpg" alt="Logo Tu Mascota" class="logo" />
+			</div>
+			<h1>Tu mascota</h1>
+			<nav class="navbar">
+				<ul class="nav-links">
+				  <li><a href="index.html">Inicio</a></li>
+				  <li><a href="pages/sobrenosotros.html">Contacto</a></li>
+				  <li><a href="pages/perros.html">Perros</a></li>
+				  <li><a href="pages/gatos.html">Gatos</a></li>
+				</ul>
+			  </nav>
+			<div class="container-icon">
+			  <div class="container-cart-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+				  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+				</svg>
+				<div class="count-products">
+				  <span id="contador-productos">0</span>
+				</div>
+			  </div>
+			</div>
+		  </header>
+
+
+
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Racion Astro</p>
+								<span class="precio-producto-carrito">$2500</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$2500</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="container">
+			<h2>Iniciar Sesión</h2>
+			<form id="loginForm">
+			  <div class="form-group">
+				<label for="loginEmail">Correo Electrónico:</label>
+				<input type="email" id="loginEmail" name="email" required>
+			  </div>
+			  <div class="form-group">
+				<label for="password">Contraseña:</label>
+				<input type="password" id="password" name="password" required>
+			  </div>
+			  <button type="submit">Iniciar Sesión</button>
+			</form>
+		  </div>
+		  
+		  <!-- Ventana de Registro -->
+		  <div id="registerModal" class="modal visible">
+			<div class="modal-content">
+			  <h3>Registrarse</h3>
+			  <form id="registerForm">
+				<div class="form-group">
+				  <label for="registerName">Nombre y Apellido:</label>
+				  <input type="text" id="registerName" name="name" required>
+				</div>
+				<div class="form-group">
+				  <label for="registerEmail">Correo Electrónico:</label>
+				  <input type="email" id="registerEmail" name="email" required>
+				</div>
+				<div class="form-group">
+				  <label for="registerPhone">Celular de Contacto:</label>
+				  <input type="tel" id="registerPhone" name="phone" required>
+				</div>
+				<button type="submit">Registrarse</button>
+				<button type="button" id="cancelButton">Cancelar</button>
+			  </form>
+			</div>
+		  </div>
+		  
+		  
+		  
+		  
+
+		  <section class="features-section">
+			<div class="feature">
+			  <div class="feature-icon">
+				<img src="imagenes/compra segura.webp" alt="Compra Segura" />
+			  </div>
+			  <h3>COMPRA SEGURA</h3>
+			  <p>Gestionamos tus datos con absoluta confidencialidad.</p>
+			</div>
+		  
+			<div class="feature">
+			  <div class="feature-icon">
+				<img src="imagenes/medios de pago.webp" alt="Medios de Pago" />
+			  </div>
+			  <h3>MEDIOS DE PAGO</h3>
+			  <p>Aceptamos pagos en efectivo y con tarjetas a través de Mercado Pago.</p>
+			</div>
+		  
+			<div class="feature">
+			  <div class="feature-icon">
+				<img src="imagenes/envios sin cargo.webp" alt="Envíos Sin Cargo" />
+			  </div>
+			  <h3>ENVÍOS SIN CARGO</h3>
+			  <p>
+				Comprando el monto mínimo tenés el delivery gratis.
+			  </p>
+			</div>
+		  </section>
+
+		  <h2 class="section-title">Todos los productos</h2>
+		  <div 
+		  class="container-items">
+				  <div class="container-items">
+		  <div class="item">
+						  <figure>
+							  <img src="imagenes/racion.jpg"
+								  alt="producto"
+							  />
+						  </figure>
+						  <div class="info-product">
+							  <h2>Racion Astro junior 22 kg</h2>
+							  <p class="price">$2500</p>
+							  <button class="btn-add-cart">Añadir al carrito</button>
+						  </div>
+					  </div>
+					  <div class="item">
+						  <figure>
+							  <img src="imagenes/racion2.webp"
+								  alt="producto"
+							  />
+						  </figure>
+						  <div class="info-product">
+							  <h2>Racion Pedigree adulto 24 kg</h2>
+							  <p class="price">$2800</p>
+							  <button class="btn-add-cart">Añadir al carrito</button>
+						  </div>
+					  </div>
+					  <div class="item">
+						  <figure>
+							  <img src="imagenes/ropa2.webp"
+								  alt="producto"
+							  />
+						  </figure>
+						  <div class="info-product">
+							  <h2>Buzo forrado</h2>
+							  <p class="price">$550</p>
+							  <button class="btn-add-cart">Añadir al carrito</button>
+						  </div>
+					  </div>
+					  <div class="item">
+						  <figure>
+							  <img src="imagenes/ropa.webp"
+							  alt="producto"
+							  />
+						  </figure>
+						  <div class="info-product">
+							  <h2>Buzo invierno</h2>
+							  <p class="price">$890</p>
+							  <button class="btn-add-cart">Añadir al carrito</button>
+						  </div>
+					  </div>
+					  <div class="item">
+						  <figure>
+							  <img src="imagenes/collar.jpg"						
+							  alt="producto"
+							  />
+						  </figure>
+						  <div class="info-product">
+							  <h2>Correa flexi</h2>
+							  <p class="price">$750</p>
+							  <button class="btn-add-cart">Añadir al carrito</button>
+						  </div>
+		  
+					  </div>
+					  <div class="item">
+						  <figure>
+							  <img src="imagenes/axell-adulto.webp"
+							  alt="producto"
+							  />
+						  </figure>
+						  <div class="info-product">
+							  <h2>Racion Axell 23 kg</h2>
+							  <p class="price">$2187</p>
+							  <button class="btn-add-cart">Añadir al carrito</button>
+						  </div>
+					  </div>
+		  
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/proxy-image.jpg" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Lager A 22 kg</h2>
+								  <p class="price">$2700</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/proxy-image (1).jpg" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Lager C 22 kg</h2>
+								  <p class="price">$2200</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/Natural-Dog-Adulto24-biscrok.jpg-copia.png" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Natural Dog 20 kg</h2>
+								  <p class="price">$3100</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/img_primocao_adultos.webp" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Primocao 23 kg </h2>
+								  <p class="price">$2187</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/equilibrio-gato-adulto-1.webp" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Equilibrio gato 7,8 kg</h2>
+								  <p class="price">$2500</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/collar2.webp" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Correa para gato</h2>
+								  <p class="price">$600</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/balanced gato.webp" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Balanced gato 9 kg</h2>
+								  <p class="price">$2100</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/cat grand plus.webp" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Gran Plus gato 10 kg</h2>
+								  <p class="price">$2500</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/cat-chow-adultos.webp" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración purina cat chow 12 kg </h2>
+								  <p class="price">$2500</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/collar gato ajustable con contacto de emergencia.avif" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Collar emergencia codigo QR gato</h2>
+								  <p class="price">$2500</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/lager-gato-castrado-10-.webp" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Lager gato 11 kg</h2>
+								  <p class="price">$2100</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/Frost-Cat-Indoor-2.webp" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Frost gato 8,5 kg</h2>
+								  <p class="price">$2213</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/primogato-2.jpg.webp" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Primogato 10 kg</h2>
+								  <p class="price">$1890</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="container-items">
+						  <div class="item">
+							  <figure>
+								  <img src="imagenes/maxine-cuadrado.webp" alt="producto" />
+							  </figure>
+							  <div class="info-product">
+								  <h2>Ración Maxine gato 7,5 kg</h2>
+								  <p class="price">$1200</p>
+								  <button class="btn-add-cart">Añadir al carrito</button>
+							  </div>
+						  </div>
+					  </div>
+				</div>
+			  </main>
+                
+			</div>
+		</div>
+
+		<section class="new-member-section">
+			<h2>¿Nuevo Integrante?</h2>
+			<div class="card-container">
+				<!-- Tarjeta Cachorro -->
+				<div class="card">
+					<a href="pages/perros.html">
+						<div class="card-image">
+							<img src="imagenes/dog image.jpg" alt="Cachorro" />
+						</div>
+					</a>
+					<div class="card-content">
+						<h3>COLECCIÓN<br><span class="highlight">Cachorro</span></h3>
+						<p>Cachorros</p>
+					</div>
+				</div>
+			
+				<!-- Tarjeta Gatito -->
+				<div class="card">
+					<a href="pages/gatos.html">
+						<div class="card-image">
+							<img src="imagenes/cat image.jpg" alt="Gatito" />
+						</div>
+					</a>
+					<div class="card-content">
+						<h3>COLECCIÓN<br><span class="highlight">Gatito</span></h3>
+						<p>Gatitos</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		  
+		  <footer class="footer">
+			<div class="footer-container">
+			  <!-- Sección: Quiénes somos -->
+			  <div class="footer-section">
+				<h3>QUIÉNES SOMOS</h3>
+				<ul>
+				  <li><a href="pages/sobrenosotros.html">Sobre nosotros</a></li>
+				  <li><a href="pages/politicasdeprivacidad.html" target="_blank">Política de Privacidad</a></li>
+				  <li><a href="https://wa.me/59891032124" target="_blank">Contacta con nosotros</a></li>
+
+				</ul>
+			  </div>
+			  <!-- Sección: Mapa del lugar -->
+			  <div class="footer-section">
+				<h3>MAPA DEL LUGAR</h3>
+				<iframe 
+				  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d347.2835531726794!2d-56.1864903!3d-34.9035385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDU0JzEyLjciUyA1NsKwMTEnMTEuMyJX!5e0!3m2!1ses-419!2suy!4v1699980538753!5m2!1ses-419!2suy" 
+				  width="200" 
+				  height="150" 
+				  style="border:0;" 
+				  allowfullscreen="" 
+				  loading="lazy">
+				</iframe>
+			  </div>
+		  
+		  
+			  <!-- Sección: Información de contacto -->
+			  <div class="footer-section">
+				<h3>INFORMACIÓN DE CONTACTO</h3>
+				<p><i class="fas fa-map-marker-alt"></i> Zelmar Michelini 1237, Montevideo, Uruguay</p>
+				<p><i class="fas fa-envelope"></i> <a href="mailto:Tumascota@gmail.com">Tumascota@gmail.com</a></p>
+				<p><i class="fas fa-phone"></i> Cel de contacto: 091032124 </p>
+			  </div>
+			</div>
+		  </footer>
+
+
+		<script src="js/main.js"></script>
+		    <!-- Agregar SweetAlert2 -->
+			<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+			<!-- Agregar Toastify JS -->
+			<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "nombre": "Racion",
+      "precio": 1800,
+      "descripcion": "Comida balanceada para perros",
+      "color": "Varía",
+      "cantidad": 20
+    },
+    {
+      "id": 2,
+      "nombre": "Ropa",
+      "precio": 500,
+      "descripcion": "Prenda de vestir para perros",
+      "color": "Varía",
+      "cantidad": 25
+    },
+    {
+      "id": 3,
+      "nombre": "Correa",
+      "precio": 300,
+      "descripcion": "Correa para pasear perros",
+      "color": "Varía",
+      "cantidad": 30
+    }
+  ]

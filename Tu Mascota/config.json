@@ -1,0 +1,13 @@
+{
+    "sweetalert": {
+      "successTitle": "¡Bienvenido!",
+      "successText": "Has ingresado correctamente.",
+      "errorTitle": "Oops...",
+      "errorText": "Usuario o contraseña incorrectos."
+    },
+    "toastify": {
+      "backgroundColorSuccess": "#4CAF50",
+      "backgroundColorError": "#FF0000"
+    }
+  }
+  
