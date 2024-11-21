@@ -9,44 +9,43 @@
 		/>
 		<title>Tu mascota</title>
 		<link rel="stylesheet" href="../styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
 	</head>
 	<body>
-		<header>
+    <header>
 			<div class="logo-container">
-			  <img src="../imagenes/Logo tu mascota.jpg" alt="Logo Tu Mascota" class="logo" />
+			  <img src="/Tu Mascota/imagenes/Logo tu mascota.jpg" alt="Logo Tu Mascota" class="logo" />
+			  <h1>Tu mascota</h1>
 			</div>
-			<h1>Tu mascota</h1>
-            <nav class="navbar">
-				<ul class="nav-links">
-				  <li><a href="../index.html">Inicio</a></li>
-                  <li><a href="sobrenosotros.html">Contacto</a></li>
-				  <li><a href="perros.html">Perros</a></li>
-				  <li><a href="gatos.html">Gatos</a></li>
-				</ul>
-			  </nav>
-			<div class="container-icon">
-			  <div class="container-cart-icon">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
-				  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-				</svg>
-				<div class="count-products">
-				  <span id="contador-productos">0</span>
-				</div>
+		  
+			<!-- Ícono del menú hamburguesa -->
+			<div class="menu-toggle" id="menu-toggle">
+			  <span class="bar"></span>
+			  <span class="bar"></span>
+			  <span class="bar"></span>
+			</div>
+		  
+			<!-- Menú de navegación -->
+			<nav class="navbar" id="navbar">
+			  <ul class="nav-links">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="sobrenosotros.html">Contacto</a></li>
+				<li><a href="perros.html">Perros</a></li>
+				<li><a href="gatos.html">Gatos</a></li>
+			  </ul>
+			</nav>
+		  
+			<!-- Ícono del carrito -->
+			<div class="container-cart-icon">
+			  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+			  </svg>
+			  <div class="count-products">
+				<span id="contador-productos">0</span>
 			  </div>
 			</div>
 		  </header>
-
-      <div class="container-cart-products hidden-cart">
-        <div class="row-product">
-          <!-- Aquí se mostrarán los productos añadidos al carrito -->
-        </div>
-        <div class="cart-total hidden">
-          <h3>Total:</h3>
-          <span class="total-pagar">$0</span>
-        </div>
-        <p class="cart-empty">El carrito está vacío</p>
-      </div>
-      
       
 </head>
 
@@ -227,35 +226,67 @@
                 <div class="footer-container">
                   <!-- Sección: Quiénes somos -->
                   <div class="footer-section">
-                    <h3>QUIÉNES SOMOS</h3>
-                    <ul>
-                      <li><a href="../pages/sobrenosotros.html">Quiénes somos</a></li>
-                      <li><a href="../pages/politicasdeprivacidad.html">Política de Privacidad</a></li>
-                      <li><a href="https://wa.me/59891032124" target="_blank">Contacta con nosotros</a></li>
-                    </ul>
+                  <h3>QUIÉNES SOMOS</h3>
+                  <ul>
+                    <li><a href="pages/sobrenosotros.html">Sobre nosotros</a></li>
+                    <li>
+                    <a href="pages/politicasdeprivacidad.html" target="_blank"
+                      >Política de Privacidad</a
+                    >
+                    </li>
+                    <li>
+                    <a href="https://wa.me/59891032124" target="_blank"
+                      >Contacta con nosotros</a
+                    >
+                    </li>
+                  </ul>
                   </div>
                   <!-- Sección: Mapa del lugar -->
                   <div class="footer-section">
-                    <h3>MAPA DEL LUGAR</h3>
-                    <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d347.2835531726794!2d-56.1864903!3d-34.9035385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDU0JzEyLjciUyA1NsKwMTEnMTEuMyJX!5e0!3m2!1ses-419!2suy!4v1699980538753!5m2!1ses-419!2suy" 
-                      width="200" 
-                      height="150" 
-                      style="border:0;" 
-                      allowfullscreen="" 
-                      loading="lazy">
-                    </iframe>
+                  <h3>MAPA DEL LUGAR</h3>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d347.2835531726794!2d-56.1864903!3d-34.9035385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDU0JzEyLjciUyA1NsKwMTEnMTEuMyJX!5e0!3m2!1ses-419!2suy!4v1699980538753!5m2!1ses-419!2suy"
+                    width="200"
+                    height="150"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
                   </div>
-
+                
                   <!-- Sección: Información de contacto -->
                   <div class="footer-section">
-                    <h3>INFORMACIÓN DE CONTACTO</h3>
-                    <p>Zelmar Michelini 1237, Montevideo, Uruguay</p>
-                    <p><a href="mailto:Tumascota@gmail.com">Tumascota@gmail.com</a></p>
-                    <p>Cel de contacto: 091032124</p>
+                  <h3>INFORMACIÓN DE CONTACTO</h3>
+                  <p><i class="fas fa-map-marker-alt"></i> Zelmar Michelini 1237, Montevideo, Uruguay</p>
+                  <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:Tumascota@gmail.com">Tumascota@gmail.com</a>
+                  </p>
+                  <p><i class="fas fa-phone"></i> Cel de contacto: 091032124 </p>
                   </div>
                 </div>
-              </footer>
+                
+                <!-- Redes Sociales -->
+                <div class="footer-social">
+                  <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="social-link instagram"
+                  >
+                  <img src="../imagenes/instagram-nuevo-icono_1057-2227.avif" alt="Instagram" />
+                  </a>
+                  <a
+                  href="https://wa.me/59891032124"
+                  target="_blank"
+                  class="social-link whatsapp"
+                  >
+                  <img src="../imagenes/diseno-icono-whatsapp_23-2147900928.avif" alt="WhatsApp" />
+                  </a>
+                  <a href="mailto:Tumascota@gmail.com" target="_blank" class="social-link email">
+                  <img src="../imagenes/email icono.jpg" alt="Email" />
+                  </a>
+                </div>
+                </footer>
             
               <script src="../js/main.js"></script>
             </body>

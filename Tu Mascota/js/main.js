@@ -269,3 +269,17 @@ document.addEventListener("DOMContentLoaded", () => {
     loadFromLocalStorage();
   });
 });
+
+
+// Seleccionar elementos
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+// Verificar que los elementos existan
+if (menuToggle && navbar) {
+  // Alternar clase 'show' en el menú
+  menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("show");
+  });
+}
+

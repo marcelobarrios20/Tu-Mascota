@@ -15,7 +15,7 @@ body {
 }
 
 .icon-cart {
-  width: 40px;
+  width: 50px;
   height: 40px;
   stroke: #000;
 }
@@ -32,11 +32,10 @@ img {
 
 header {
   display: flex;
-  height: 50px;
-  background-color: rgb(79, 110, 126);
-  justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgb(79, 110, 126);
 }
 
 .logo-container {
@@ -126,7 +125,7 @@ h1 {
 .precio-producto-carrito {
   font-weight: 700;
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .cantidad-producto-carrito {
@@ -316,32 +315,29 @@ button[type="submit"] {
   margin: 0;
 }
 
+/* Footer general */
 .footer {
-  background-color: #e74c3c; /* Color similar al de la imagen */
+  padding: 20px;
+  background-color: #4bc657;
   color: white;
-  padding: 20px 0;
-  text-align: left;
+  font-family: Arial, sans-serif;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
   gap: 20px;
 }
 
 .footer-section {
-  flex: 1 1 200px;
-  margin: 10px;
+  flex: 1;
+  min-width: 250px;
 }
 
 .footer-section h3 {
   font-size: 18px;
-  margin-bottom: 15px;
-  color: #fff;
-  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .footer-section ul {
@@ -350,41 +346,46 @@ button[type="submit"] {
 }
 
 .footer-section ul li {
-  margin: 5px 0;
+  margin-bottom: 5px;
 }
 
 .footer-section ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  font-size: 14px;
 }
 
 .footer-section ul li a:hover {
-  text-decoration: underline;
+  color: #f7a76c;
 }
 
-.footer-section iframe {
-  margin-top: 10px;
-  border-radius: 5px;
+/* Redes Sociales */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.footer-section p {
-  font-size: 14px;
-  margin: 5px 0;
+.footer-social .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4a5568;
+  border-radius: 50%;
+  transition: background-color 0.3s;
 }
 
-.footer-section p i {
-  margin-right: 10px;
+.footer-social .social-link:hover {
+  background-color: #f7a76c;
 }
 
-.footer-section a {
-  color: #fff;
-  text-decoration: none;
+.footer-social img {
+  width: 24px;
+  height: 24px;
 }
 
-.footer-section a:hover {
-  text-decoration: underline;
-}
 
 .pet-section {
   position: relative;
@@ -550,32 +551,25 @@ h2 {
 
 /* Navbar */
 .navbar {
-  flex-grow: 1;
+  display: flex;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
   gap: 20px;
 }
 
-.nav-links li {
-  font-size: 1rem;
-}
-
-.nav-links a {
+.nav-links li a {
   text-decoration: none;
   color: white;
+  font-size: 16px;
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links li a:hover {
   color: #f7a76c;
 }
-
 /*sobre nosotros */
 
 .hero-section {
@@ -860,7 +854,81 @@ button#cancelButton:hover {
   background-color: #d32f2f;
 }
 
+/* Estilos del menú hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
 
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s;
+}
+/* Mostrar el menú hamburguesa en dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Muestra el ícono hamburguesa */
+  }
+
+  .navbar {
+    display: none; /* Oculta el menú inicialmente */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: rgb(79, 110, 126);
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  .navbar.show {
+    display: flex; /* Muestra el menú cuando tenga la clase 'show' */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Carrito siempre visible */
+.container-cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.count-products {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff6347;
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Negrita para destacar */
+}
+
+body, p, a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; /* Normal */
+  line-height: 1.6; /* Espaciado para legibilidad */
+}
 
 
 
