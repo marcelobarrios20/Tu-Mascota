@@ -930,6 +930,33 @@ body, p, a {
   line-height: 1.6; /* Espaciado para legibilidad */
 }
 
+.hero-container {
+  background: url('imagenes/smiling\ dog.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
 
+.text-container {
+  background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente detrás del texto */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
+}
+
+p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
 
 
